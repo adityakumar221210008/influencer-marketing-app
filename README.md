@@ -26,6 +26,13 @@ This project demonstrates **React Native fundamentals, API integration, navigati
 - REST APIs
 
 ---
+## Screenshots
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/e83727c2-0118-46ec-bbc4-eeb01131756d" />
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/bdcc4116-706e-495e-87fb-d8cfa80cd781" />
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/a400662a-3832-488e-b263-61167c132032" />
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/9c206e76-6267-45fb-b073-d7197f8f5f81" />
+---
+
 
 ## APIs Used
 
