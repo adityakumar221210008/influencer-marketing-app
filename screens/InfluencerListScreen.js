@@ -9,14 +9,17 @@ export default function InfluencerListScreen({ navigation }) {
   const [influencers, setInfluencers] = useState([]);
   const [search, setSearch] = useState("");
   const [favorites, setFavorites] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     loadInfluencers();
   }, []);
 
   const loadInfluencers = async () => {
+    setLoading(true);
     const data = await fetchInfluencers();
     setInfluencers(data);
+    setLoading(false);
   };
 
   const toggleFavorite = (id) => {
@@ -45,6 +48,8 @@ export default function InfluencerListScreen({ navigation }) {
       <FlatList
         data={filtered}
         keyExtractor={(item) => item.id}
+        refreshing={loading}
+        onRefresh={loadInfluencers}
         renderItem={({ item }) => (
           <InfluencerCard
             influencer={item}
